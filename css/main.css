@@ -1,0 +1,344 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.image-device, section, .track, .div-super {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #4c545d;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+p {
+  font-weight: 400;
+  color: #9fabb2;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-weight: 600;
+  color: #4c545d;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  color: #4c545d;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.btn {
+  padding: 0.9rem 2.5rem;
+  border-radius: 10rem;
+}
+.btn-primary {
+  background: #6173ff;
+  border: none;
+  margin-top: 2rem;
+  box-shadow: 1px 3px 2px #6173ff;
+}
+.btn-primary:hover {
+  background: #8a97ff;
+}
+.btn-success {
+  background: #26baa4;
+  border: none;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  box-shadow: 1px 3px 2px #26baa4;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .btn-success {
+    margin-right: 0.5rem;
+  }
+}
+.btn-success:hover {
+  background: #34d5bd;
+}
+
+.header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+}
+.header_logo {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section, .track {
+  width: 45%;
+  max-width: 90%;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  section, .track {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  section, .track {
+    width: 100%;
+  }
+}
+
+section {
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1595px) and (min-width: 800px) {
+  section {
+    width: 75%;
+  }
+}
+
+.track {
+  margin: 8rem auto 5rem auto;
+}
+@media screen and (max-width: 1595px) and (min-width: 800px) {
+  .track {
+    width: 60%;
+  }
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-div {
+  margin-left: -2rem;
+  margin-right: 7rem;
+}
+.main-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  height: auto;
+}
+.main-div2 {
+  display: none;
+}
+.main-box {
+  margin-top: 6rem;
+  flex-basis: 22%;
+}
+.main-box-description {
+  margin-bottom: 2rem;
+}
+.main-box-description p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .main .main-div {
+    margin: 2rem;
+  }
+  .main .main-box {
+    flex-basis: 75%;
+    margin: 6rem auto 0 auto;
+  }
+  .main .main-box-description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .main-div {
+    margin: 4rem;
+  }
+  .main-box {
+    flex-basis: 75%;
+    margin: 6rem auto 0 auto;
+  }
+  .main-box-description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1085px) and (min-width: 800px) {
+  .main-div {
+    margin: 0 auto;
+  }
+  .main-box {
+    flex-basis: 45%;
+    margin: 6rem auto 0 auto;
+  }
+  .main-box-description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 1085px) {
+  .main-div {
+    margin-right: 5rem;
+  }
+}
+
+.image-device {
+  margin-top: 7rem;
+}
+.image-device--image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 6rem auto 5rem auto;
+}
+.image-device p {
+  width: 60%;
+  margin: 1.5rem auto 0 auto;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .image-device p {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+
+.div-super {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .div-super {
+    width: 80%;
+    margin: 0 auto 2.5rem auto;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .about {
+    width: 80%;
+    margin: 0 auto 2.5rem auto;
+  }
+}
+
+.partner {
+  margin-top: 7rem;
+  margin-bottom: 9rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .partner {
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+  }
+  .partner-logo {
+    margin: 0 auto 4rem auto;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .partner {
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+  }
+  .partner-logo {
+    margin: 0 auto 4rem auto;
+  }
+}
+@media screen and (max-width: 1085px) and (min-width: 800px) {
+  .partner {
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+  }
+  .partner-logo {
+    margin: 0 auto 4rem auto;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .clipboard-div {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1595px) and (min-width: 800px) {
+  .clipboard-div {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.bottom {
+  background-color: #E9EAEB;
+  padding: 2rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.bottom-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .bottom {
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  .bottom-list {
+    flex-flow: column nowrap;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .bottom {
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  .bottom-list {
+    margin: 2rem 0;
+  }
+}
+
+footer {
+  background-color: #E9EAEB;
+}
+
+.attribution {
+  margin: 0px;
+  text-align: center;
+  color: #4c545d;
+}
+.attribution a {
+  color: #26baa4;
+}
+@media screen and (max-width: 600px) and (min-width: 375px) {
+  .attribution {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

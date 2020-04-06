@@ -1,0 +1,226 @@
+
+section,.track{
+    width: 45%;
+    max-width: 90%;
+    @media screen and (max-width:600px) and (min-width:375px){
+         width: 100%;
+      }
+      @media screen and (max-width:800px) and (min-width:600px){
+            width: 100%;
+     }
+     
+}
+section{
+    padding: 0 2rem;
+    margin: 0 auto; 
+    @media screen and (max-width:1595px) and (min-width:800px){
+        width: 75%;
+
+     }
+}
+.track{
+    margin: 8rem auto 5rem auto;
+    @media screen and (max-width:1595px) and (min-width:800px){
+        width: 60%;
+
+    }
+    
+}
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    &-div{
+    
+        margin-left: -2rem;
+        margin-right: nth($list: $margin, $n: 3);
+    }
+    &-image{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    &-div2{
+        display: none;
+    }
+    &-box{
+        margin-top: nth($list: $margin, $n: 4);
+        flex-basis: 22%;
+        &-description{
+
+            margin-bottom: nth($list: $margin, $n: 1);
+            p{
+                font-size: nth($list: $margin, $n: 2);
+            }
+        }
+    }
+    @media screen and (max-width:600px) and (min-width:375px){
+       .main{
+           &-div{
+               margin:2rem;
+           }
+           &-box{
+               flex-basis: 75%;
+               margin: nth($list: $margin, $n: 4) auto 0 auto;
+               &-description{
+                text-align: center;
+            }
+           }
+       }
+    }
+    @media screen and (max-width:800px) and (min-width:600px){
+        &-div{
+            margin: 4rem;
+        }
+        &-box{
+            flex-basis: 75%;
+            margin: nth($list: $margin, $n: 4) auto 0 auto;
+            &-description{
+                text-align: center;
+            }
+           }
+    }
+    @media screen and (max-width:1085px) and (min-width:800px){
+
+        &-div{
+            margin: 0 auto;
+        }
+        &-box{
+            flex-basis: 45%;
+            margin: nth($list: $margin, $n: 4) auto 0 auto;
+            &-description{
+                
+                text-align: center;
+            }
+           }
+}
+    @media screen and (max-width:1100px) and (min-width:1085px){
+        &-div{
+    
+            margin-right: 5rem;
+        }
+    }
+
+   
+
+}
+.image-device{
+    margin-top: nth($list: $margin, $n:3);
+    &--image{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin: 6rem auto 5rem auto;
+    }
+    p{
+        width: 60%;
+       margin: 1.5rem auto 0 auto;
+    }
+    @media screen and (max-width:600px) and (min-width:375px){
+        p{
+            width: 90%;
+            margin-top: 0;
+        }
+    }
+}
+.div-super{
+    margin-bottom: nth($list: $padding, $n: 2);
+    @media screen and (max-width:600px) and (min-width:375px){
+        width: 80%;
+        margin: 0 auto nth($list: $padding, $n: 2) auto ;
+    }
+}
+.about{
+    @media screen and (max-width:600px) and (min-width:375px){
+        width: 80%;
+        margin: 0 auto nth($list: $padding, $n: 2) auto ;
+
+
+    }
+}
+.partner{
+    margin-top: nth($list: $margin, $n: 3);
+    margin-bottom: 9rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @media screen and (max-width:600px) and (min-width:375px){
+    flex-flow:column wrap;
+    margin-bottom: 5rem;
+    &-logo{
+        margin:0 auto 4rem auto;
+        }
+    }
+    @media screen and (max-width:800px) and (min-width:600px){
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+        &-logo{
+            margin:0 auto 4rem auto;
+            }
+    }
+    @media screen and (max-width:1085px) and (min-width:800px){
+        flex-flow: column wrap;
+    margin-bottom: 5rem;
+        &-logo{
+            margin:0 auto 4rem auto;
+            }
+    }
+
+}
+
+.clipboard-div{
+    @media screen and (max-width:600px) and (min-width:375px){
+        width: 85%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width:1595px) and (min-width:800px){
+        width: 75%;
+        margin: 0 auto;
+
+    }
+}
+.bottom{
+    background-color: #E9EAEB;
+    padding: nth($list: $margin, $n: 1) ;
+    margin-top: nth($list: $margin, $n: 3);
+    display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+
+    &-list{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+    }
+    @media screen and (max-width:600px) and (min-width:375px){
+        flex-flow:column wrap;
+        text-align: center;
+        &-list{
+            flex-flow: column nowrap;
+            margin: 2rem 0 ;
+        }
+    }
+    @media screen and (max-width:800px) and (min-width:600px){
+        flex-flow:column wrap;
+        text-align: center;
+        &-list{
+            margin: 2rem 0 ;
+        }
+    }
+}
+footer{
+    background-color: #E9EAEB;
+}
+.attribution{
+    margin: 0px;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    a{
+        color: hsl(171, 66%, 44%);
+    }
+    @media screen and (max-width:600px) and (min-width:375px){
+        font-size: .7rem;
+        font-weight: bold;
+    }
+}

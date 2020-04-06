@@ -1,0 +1,14 @@
+ .btn{
+     padding: $padding;
+     border-radius: $btn-border-radius;
+     &-primary{
+         @include btn-primary;
+         @include btn-shadow ($primary)
+
+     }    
+     &-success{
+         @include btn-success;
+         @include btn-shadow ($success)
+     }
+}
+

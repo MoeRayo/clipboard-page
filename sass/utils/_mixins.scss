@@ -1,0 +1,28 @@
+
+@mixin btn-primary {
+    background: $primary;
+    border:none;
+    margin-top:nth($list: $margin , $n: 1);
+
+    &:hover{
+        background:lighten($color:  $primary, $amount: 8);
+    }
+    
+}
+@mixin btn-success {
+    background: $success;
+    border: none;
+    margin-top: nth($list: $margin, $n: 1);
+    margin-right: nth($list: $margin, $n: 2);
+    @media screen and (max-width:600px) and (min-width:375px){
+    margin-right: .5rem;
+
+    }
+
+    &:hover{
+        background:lighten($color: $success, $amount: 8);
+    }
+}
+@mixin btn-shadow($primary){
+    box-shadow: 1px 3px 2px $primary;
+}
